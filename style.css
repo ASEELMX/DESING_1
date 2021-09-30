@@ -1,0 +1,130 @@
+body{
+  
+  background-color: rgb(85, 42, 42);
+  
+}
+*{
+    margin: 0;
+    padding: 0;
+  }
+  html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+  }
+  .icons{
+    list-style: none;
+    height: 140%;
+    padding-bottom: 20%;
+
+  }
+  
+  .icons li{
+    height: 17%;
+    width: 25.5%;
+    display: inline-block;
+    margin: 0 3px 3px;
+    cursor: pointer;
+    position: relative;
+
+    
+  }
+  .icons li:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 10%;
+    background-color: rgb(216, 202, 146);
+    transition: all 0.3s ease-in;
+  }
+  .icons li:hover:before{
+    transform: rotate(360deg);
+    border-radius: 100%;
+  }
+  
+  .icons li a span{
+    font-size: 51px;
+    line-height: 134px;
+    color: #fff;
+    transition: all 0.3s ease-out;
+  }
+  .icons li:hover a span{
+    transform: scale(1.2);
+  }
+  .logo-wrapper img {
+    text-align: center;
+    height: 70%px;
+    width: 70%;
+    padding-bottom: 48%;
+    background-position: center;
+}
+#logo {
+  height: auto;
+}
+.icons :nth-child(1):hover .fa-facebook-f{
+  color: #078AFE;   
+  
+}
+.icons :nth-child(2):hover .fa-twitter{
+  color: #37A1FF;   
+  
+}
+.icons :nth-child(3):hover .fa-instagram{
+color: #FF7C00 ;  
+}
+.icons :nth-child(4):hover .fa-snapchat{
+  color: #FBFF00;   
+  
+}
+.icons :nth-child(5):hover .fa-android{
+  color: #0ffe07;   
+  
+}
+.icons :nth-child(6):hover .fa-apple{
+  color: #616b72;   
+  
+}
+.icons :nth-child(7):hover .fa-phone{
+  color: #00070e;   
+  
+}
+.icons :nth-child(8):hover .fa-location-dot{
+  color: #095699;   
+  
+}
+.icons :nth-child(10):hover .fa-whatsapp{
+  color: #24a113;   
+  
+}
+.icons :nth-child(11):hover .fa-envelope{
+  color: #004db3;   
+  
+}
+
+@media screen and (max-width: 700px) {
+  #logo {
+      width: 200px;
+  }
+  .icons {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20%;
+}
+.icons li a span {
+  font-size: 40px;
+  line-height: 134px;
+ 
+  
+}
+  .icons li {
+    height: 21.5%;
+    width: 21.5%;
+  
+}
+}
